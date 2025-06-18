@@ -1,113 +1,91 @@
-📊 Northwind Trader – Dashboardanalyse
-![image](https://github.com/user-attachments/assets/a1dfe4f6-c678-47a2-a898-a76a8a71409d)
 
-🔷 Gesamtüberblick: Geschäftszahlen auf einen Blick
-Kennzahl	Wert	Interpretation
-Nettoumsatz	$77.920	Solider Umsatz – deutet auf ein mittelständisches Unternehmen im Handel oder Großhandel hin.
-Verkaufsmenge	4.260	Relativ hohe Stückzahl – viele kleine Einheiten verkauft, vermutlich Konsumgüter.
-Personal	9	Kleine Belegschaft – effizient oder auf wenige Key-Accounts spezialisiert.
-Kunden	29	Begrenzte Kundenzahl – B2B-Fokus oder hochwertige Stammkundschaft.
+📊 Power BI Projektbericht – Northwind Trader.
+Im Rahmen meines Lernprozesses mit Power BI habe ich eine Reihe interaktiver Dashboards basierend auf dem fiktiven Northwind Trader-Datensatz erstellt. Ziel war es, zu verstehen, wie man Rohdaten in aussagekräftige Erkenntnisse umwandeln kann – mithilfe von Datenmodellierung, Visualisierung und den interaktiven Funktionen von Power BI. Nachfolgend eine Übersicht über jedes Dashboard und die gewonnenen Erkenntnisse.
 
-🥇 Meistverkaufte Produkte
-🔸 Diagramm: "Meistverkaufte Waren" (links)
-Warengruppe	Verkäufe	Anteil an Top-Produkten
-Getränke	14	~32 %
-Trockenfrüchte & Nüsse	9	~21 %
-Backwaren & Backzutaten	5	~11 %
-Süßigkeiten, Saucen etc.	4–5	~9–11 %
-Öl, Gemüse, Getreide	1–2	~2–5 %
+Dashboard 1 – Verkaufsanalyse & Logistikübersicht
+![image](https://github.com/user-attachments/assets/163a3948-cebb-44ff-945c-b97913568928)
 
-🔍 Schlüssel-Erkenntnisse:
-Getränke sind mit Abstand die stärkste Produktgruppe → Potenzial für Paketangebote und Cross-Selling.
+Dieses Dashboard liefert eine allgemeine Übersicht zu Umsatz und Logistik:
 
-Langsam drehende Produkte wie Öl und Getreide sollten überprüft oder gebündelt angeboten werden.
+Nettoumsatz & Verkaufsmenge: Der Nettoumsatz beträgt $77,92K bei insgesamt 4,26K verkauften Einheiten.
 
-Produktmix wirkt divers, aber stark ungleich verteilt.
+Meistverkaufte Waren:
 
-📌 Empfehlungen:
+Getränke (14 Stück),
 
-Fokus auf Hauptumsatzträger.
+Trockenfrüchte & Nüsse (9 Stück),
 
-Lagermanagement an Verkaufszahlen anpassen.
+gefolgt von Backwaren & Süßigkeiten.
 
-„Langsamdreher“ ggf. aus dem Sortiment nehmen oder gezielt bewerben.
+Weniger verkaufte Waren:
 
-👥 Verkäufe pro Mitarbeiter
-🔸 Diagramm: "Meistverkaufte Waren bei Personal" (Mitte oben)
-Drei Mitarbeiter (Freehafer, Sergienko, Zare) verantworten jeweils 20 % der Verkäufe.
+Öl, Getreide und Obst- & Gemüsekonserven.
 
-Die restlichen sechs haben deutlich geringere Anteile (6–13 %).
+Leistung nach Mitarbeiter: Das Kreisdiagramm zeigt die Verkaufsverteilung nach Vertriebsmitarbeitern.
 
-🔍 Schlüssel-Erkenntnisse:
-Leistungsgefälle im Vertrieb → Ungleichgewicht bei Kundenverteilung oder Produktivität.
+Versandkosten nach Lieferort: Höchste Versandkosten gab es nach Milwaukee ($104) und Denver ($103,5).
 
-Möglicherweise Key Accounts nur bei wenigen Mitarbeitenden.
+Kundenstandorte: Eine interaktive Karte zeigt die geografische Verteilung der Kunden in den USA.
 
-📌 Empfehlungen:
+![image](https://github.com/user-attachments/assets/01941ab1-4fa9-4cb7-b7da-7815d5082f9c)
+Das Dashboard kann Drilldown zu Vergleichsansicht der meistverkauften Waren aus drei Perspektiven: nach Mitarbeiter, Position und Produktkategorie. Diese Ansicht ermöglicht es, den Zusammenhang zwischen Vertriebspersonal, ihrer Rolle im Unternehmen und den am häufigsten verkauften Produkten besser zu verstehen.
 
-Gute Praktiken von Top-Mitarbeitern auf andere übertragen (z. B. durch Coaching).
 
-Gerechtere Kundenzuteilung oder gezielte Verkaufsanreize.
+Dashboard 2 – Umsatzanalyse nach Kategorie, Bundesland & Kunden
+![image](https://github.com/user-attachments/assets/1fc8140c-88ae-4a54-a7f8-ccf6e49b0e59)
 
-Möglicher Schulungsbedarf beim Rest des Teams.
+Dieses Dashboard fokussiert sich auf die finanzielle Performance nach Produktkategorie, Bundesland und Kundenunternehmen:
 
-🚚 Versandkosten nach Lieferort
-🔸 Diagramm: "Versandkosten per Lieferort" (unten Mitte)
-Höchste Versandkosten:
+Nettoumsatz nach Kategorie:
 
-Salt Lake City
+Getränke erzielen mit Abstand den höchsten Umsatz.
 
-Las Vegas
+Nettoumsatz nach Bundesland:
 
-Denver
+Die umsatzstärksten Bundesländer sind Tennessee (TN) und Idaho (ID).
 
-Geringe Versandkosten:
+Weniger Umsatz wurde in Illinois (IL) und Kalifornien (CA) erzielt.
 
-Miami
+Nettoumsatz pro Kundenfirma:
 
-Portland
+Firma BB und Firma G sind für über 60 % des Umsatzes verantwortlich.
 
-Memphis
+Dieses Dashboard zeigt, wie sich der Umsatz je nach Region und Kundenstruktur unterscheidet.
+Ein interessanter Befund aus den Dashboards 1 und 2 zeigt, dass die meistverkauften Produkte – mit Ausnahme von „Getränke“ – nicht gleichzeitig die umsatzstärksten Kategorien sind. Das deutet darauf hin, dass eine hohe Verkaufsmenge nicht zwingend zu einem hohen Nettoumsatz führt, was insbesondere bei Produkten mit geringem Stückpreis erkennbar wird.
 
-🔍 Schlüssel-Erkenntnisse:
-Hohe Kosten in bestimmten Regionen → möglicherweise geringe Bündelung oder weiter entfernte Standorte.
+Dashboard 3 – Versand & Transaktionsarten
+![image](https://github.com/user-attachments/assets/bc850989-240a-4463-857d-cd2c92b21ba3)
 
-Große Preisunterschiede deuten auf Potenzial zur Logistikoptimierung hin.
+Diese Ansicht konzentriert sich auf logistische und operative Kennzahlen:
 
-📌 Empfehlungen:
+Versandkosten nach Lieferort:
 
-Lieferungen bündeln (z. B. Mindestbestellwert einführen).
+Höchste Kosten gab es in Milwaukee, Denver und Salt Lake City.
 
-Alternative Lieferpartner oder dezentrale Lager prüfen.
+Durchschnittliche Lieferzeit (in Tagen):
 
-Versandkosten in Preiskalkulation einbeziehen.
+Durchschnittliche Lieferdauer beträgt 3,43 Tage, was einen effizienten Ablauf zeigt.
 
-🗺️ Geografische Übersicht
-🔸 Karte (rechts)
-Darstellung von Kunden- oder Lieferstandorten in Nordamerika, u. a.:
+Waren nach Transaktionsart:
 
-Boise, Boston, Chicago, Denver, Honolulu
+Produkte sind in Verkauft, Gekauft und Zurückgehalten unterteilt.
 
-Farben dienen der Zuordnung zu Städten → hilft bei geografischer Analyse.
+Bestellte Waren:
 
-🔍 Schlüssel-Erkenntnisse:
-Kunden sind geografisch weit gestreut, was erhöhte Versandkosten erklären kann.
+Insgesamt wurden 102 Bestellungen registriert.
 
-Potenzial für regionale Marketingstrategien oder gezielte Expansion.
+Top-Produkte (Bestätigung aus Dashboard 1):
 
-✅ Strategische Gesamt-Einschätzung
-Bereich	Empfehlungen
-Vertrieb	Leistungen der Top-Mitarbeiter analysieren & multiplizieren
-Produkte	Sortiment fokussieren & unterperformende Artikel prüfen
-Kundenbasis	Bestehende Kundenbindung stärken, ähnliche Zielkunden akquirieren
-Logistik	Versandkosten optimieren durch Bündelung & Lagerstrategien
-Dashboard	Zeitliche Entwicklung, Gewinnmargen & Wiederbestellraten ergänzen
-Die wichtigsten Metriken im oberen Bereich zeigen den Nettoumsatz (77,92 Tsd. USD), die Verkaufsmenge (4,26 Tsd. Einheiten), die Anzahl der Mitarbeiter (9) sowie die betreuten Kunden (29).
-Zentral dargestellt sind:
-Meistverkaufte Warengruppen: Getränke, Trockenfrüchte und Backwaren dominieren die Verkaufszahlen. Die umsatzstärksten Kategorien wie Getränke und Trockenfrüchte zeigen, welche Produkte im Fokus stehen sollten.
-Verkäufe pro Mitarbeiter (Kreisdiagramm): zeigt die Verteilung der Bestellungen auf einzelne Mitarbeitende. Die Übersicht über die Verkäufe pro Mitarbeiter schafft Transparenz und unterstützt die Leistungsmessung im Vertrieb.
-Versandkosten pro Lieferort: Die durchschnittlichen Frachtkosten variieren je nach Stadt, wobei Milwaukee, Denver und Las Vegas zu den teuersten gehören. Die Versandkostenverteilung ermöglicht es, logistische Schwachstellen zu identifizieren und Optimierungspotenziale aufzudecken.
-Kundenverteilung auf der Karte: Die geographische Visualisierung zeigt, in welchen Regionen Nordamerikas die Kunden von Northwind ansässig sind. Die Analyse nach Regionen und Kunden macht sichtbar, wo das Unternehmen seine stärksten Märkte und loyalsten Abnehmer hat.
+Getränke bleiben die meistbestellte Kategorie.
 
-Dieses Dashboard unterstützt datenbasierte Entscheidungen in Vertrieb, Logistik und Personalsteuerung und ist ideal für Präsentationen im Bereich Business Intelligence.
+🎯 Lernziele & Erkenntnisse:
+Einsatz von Power Query zur Datenbereinigung und -transformation.
 
+Erstellung von Datenmodellen mit Beziehungen zur dynamischen Filterung.
+
+Nutzung von DAX-Formeln zur Berechnung individueller KPIs (z. B. Nettoumsatz, Bruttoumsatz).
+
+Integration von interaktiven Visualisierungen wie Karten, Donut-Charts und Slicern für eine benutzerfreundliche Analyse.
+
+💡 Fazit:
+Dieses Power BI-Projekt zeigt, wie sich verschiedene Geschäftsdimensionen (Produkt, Geografie, Mitarbeitende, Kunden) mithilfe von intuitiven Dashboards analysieren und darstellen lassen. Es war eine wertvolle Übung in Datenvisualisierung, Business Intelligence und Storytelling mit Daten.
